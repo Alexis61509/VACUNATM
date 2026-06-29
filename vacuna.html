@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Vacuna</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0d4e96, #3cb371);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contenedor{
+            background: white;
+            width: 400px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            text-align: center;
+            color: #0d4e96;
+            margin-bottom: 20px;
+        }
+
+        label{
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+            background: #3cb371;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: #2e8b57;
+        }
+
+        .regresar{
+            background: #0d4e96;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Registro de Vacuna</h1>
+
+        <label>Fecha de aplicación:</label>
+        <input type="date">
+
+        <label>Centro de vacunación:</label>
+        <input type="text" placeholder="Ingrese el centro de vacunación">
+
+        <label>Tipo de vacuna:</label>
+        <select>
+            <option>Seleccione una vacuna</option>
+            <option>Pfizer</option>
+            <option>AstraZeneca</option>
+            <option>Moderna</option>
+            <option>Sputnik V</option>
+            <option>CanSino</option>
+        </select>
+
+        <label>Lote de vacuna:</label>
+        <input type="text" placeholder="Ingrese el lote">
+
+        <label>Dosis aplicada:</label>
+        <select>
+            <option>Seleccione una dosis</option>
+            <option>Primera dosis</option>
+            <option>Segunda dosis</option>
+            <option>Dosis de refuerzo</option>
+        </select>
+
+        <label>Nombre del enfermero(a):</label>
+        <input type="text" placeholder="Nombre del enfermero(a)">
+
+        <button onclick="alert('Registro guardado correctamente')">
+            Guardar Registro
+        </button>
+
+        <button class="regresar" onclick="location.href='inicio.html'">
+            Regresar
+        </button>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Persona</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.telefono{
+    width:350px;
+    background:white;
+    border:8px solid #222;
+    border-radius:35px;
+    padding:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    color:#0d4e96;
+    margin-bottom:20px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border:none;
+    border-radius:10px;
+    background:#4CAF50;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#388E3C;
+}
+
+.regresar{
+    background:#0d4e96;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="telefono">
+
+    <h1>Registro de Persona</h1>
+
+    <input type="text" placeholder="Nombre completo">
+
+    <input type="text" placeholder="CURP">
+
+    <input type="number" placeholder="Edad">
+
+    <input type="tel" placeholder="Teléfono">
+
+    <textarea rows="3" placeholder="Dirección"></textarea>
+
+    <textarea rows="3"
+    placeholder="Enfermedades o condiciones médicas"></textarea>
+
+    <select>
+        <option>¿Pertenece a grupo vulnerable?</option>
+        <option>Sí</option>
+        <option>No</option>
+    </select>
+
+    <button onclick="alert('Registro guardado correctamente')">
+        GUARDAR REGISTRO
+    </button>
+
+    <button class="regresar"
+    onclick="window.location.href='inicio.html'">
+        REGRESAR
+    </button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultar Cita</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0d4e96,#3cb371);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.contenedor{
+    width:400px;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+h1{
+    color:#0d4e96;
+    margin-bottom:20px;
+}
+
+.dato{
+    background:#f5f5f5;
+    padding:15px;
+    border-radius:10px;
+    margin:10px 0;
+    text-align:left;
+}
+
+.dato h3{
+    color:#3cb371;
+    margin-bottom:5px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:20px;
+    border:none;
+    border-radius:12px;
+    background:#0d4e96;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="contenedor">
+
+    <h1>Consultar Cita</h1>
+
+    <div class="dato">
+        <h3>Fecha de Aplicación</h3>
+        <p>Pendiente de registro</p>
+    </div>
+
+    <div class="dato">
+        <h3>Centro de Vacunación</h3>
+        <p>Pendiente de registro</p>
+    </div>
+
+    <div class="dato">
+        <h3>Tipo de Vacuna</h3>
+        <p>Pendiente de registro</p>
+    </div>
+
+    <div class="dato">
+        <h3>Estado</h3>
+        <p>Sin cita registrada</p>
+    </div>
+
+    <button onclick="location.href='inicio.html'">
+        Regresar
+    </button>
+
+</div>
+
+</body>
+</html>

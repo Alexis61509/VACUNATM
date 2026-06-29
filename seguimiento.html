@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seguimiento de Salud</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.telefono{
+    width:350px;
+    background:white;
+    border:8px solid #222;
+    border-radius:35px;
+    padding:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    color:#0d4e96;
+    margin-bottom:20px;
+}
+
+h3{
+    color:#4CAF50;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+label{
+    display:block;
+    margin:10px 0;
+    font-size:16px;
+}
+
+input[type="text"]{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.enviar{
+    background:#4CAF50;
+}
+
+.regresar{
+    background:#0d4e96;
+}
+
+.gravedad button{
+    margin-top:10px;
+}
+
+.leve{
+    background:green;
+}
+
+.moderado{
+    background:orange;
+}
+
+.grave{
+    background:red;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+</style>
+</head>
+<body>
+
+<div class="telefono">
+
+    <h1>Seguimiento de Salud</h1>
+
+    <h3>¿Presenta algún síntoma?</h3>
+
+    <label><input type="checkbox"> Fiebre</label>
+    <label><input type="checkbox"> Dolor de cabeza</label>
+    <label><input type="checkbox"> Dolor muscular</label>
+    <label><input type="checkbox"> Escalofríos</label>
+    <label><input type="checkbox"> Náuseas</label>
+
+    <input type="text" placeholder="Otro síntoma">
+
+    <h3>Nivel de gravedad</h3>
+
+    <div class="gravedad">
+        <button class="leve">LEVE</button>
+        <button class="moderado">MODERADO</button>
+        <button class="grave">GRAVE</button>
+    </div>
+
+    <button class="enviar"
+    onclick="alert('Reporte enviado correctamente')">
+        ENVIAR REPORTE
+    </button>
+
+    <button class="regresar"
+    onclick="window.location.href='inicio.html'">
+        REGRESAR
+    </button>
+
+</div>
+
+</body>
+</html>
